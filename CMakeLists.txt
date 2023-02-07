@@ -11,4 +11,8 @@ add_executable(main ${SOURCE_FILES})
 
 target_include_directories(main PRIVATE
     src/radixsort
+    src/quicksort
+    src/mergesort
+    src/random
+    src/bench
 )
