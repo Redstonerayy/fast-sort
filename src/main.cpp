@@ -7,12 +7,12 @@
 
 int main(){
     unsigned int maximum = 0xFFFFFFFF;
-    std::vector<std::uint32_t> raidxinput = gen(tenmillion, maximum);
+    std::vector<std::uint32_t> radixsortinput = gen(tenmillion, maximum);
     std::vector<std::uint32_t> quicksortinput = gen(tenmillion, maximum);
-    Timer::start("terdimann");
-    RadixSort(raidxinput);
-    Timer::stop("terdimann", true);
-    // Timer::start("quicksort");
-    // QuickSort(quicksortinput, 0, quicksortinput.size() - 1);
-    // Timer::stop("quicksort", true);
+    Timer::start("Radixsort");
+    RadixSort(radixsortinput);
+    Timer::stop("Radixsort", true);
+    Timer::start("Quicksort");
+    QuickSort(quicksortinput, 0, quicksortinput.size() - 1);
+    Timer::stop("Quicksort", true);
 }

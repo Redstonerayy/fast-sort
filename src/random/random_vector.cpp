@@ -11,7 +11,7 @@ std::vector<unsigned int> gen(unsigned long length, unsigned int max){
 
     std::vector<unsigned int> numbers;
     numbers.reserve(length);
-    for(int i = 0; i < length; ++i){
+    for(unsigned long i = 0; i < length; ++i){
         numbers.emplace_back(dist(rng));
     }
 
